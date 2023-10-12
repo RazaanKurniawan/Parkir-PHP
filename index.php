@@ -22,7 +22,6 @@
               <table class="table table-bordered" id="myTable">
                 <thead>
                   <tr>
-                    <th scope="col">NO.</th>
                     <th scope="col">PLAT NOMOR</th>
                     <th scope="col">JENIS KENDARAAN</th>
                     <th scope="col">NAMA KENDARAAN</th>
@@ -40,14 +39,14 @@
                   ?>
 
                   <tr>
-                      <td><?php echo $no++ ?></td>
                       <td><?php echo $row['plat_nomor'] ?></td>
                       <td><?php echo $row['jenis_kendaraan'] ?></td>
                       <td><?php echo $row['nama_kendaraan'] ?></td>
                       <td><?php echo $row['jam_masuk'] ?></td>
                       <td><?php echo $row['jam_keluar'] ?></td>
                       <td class="text-center">
-                        <a href="edit-parkir.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-primary">EDIT</a>
+                        <a href="update-parkir.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-primary">JAM</a>
+                        <a href="edit-parkir.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-warning">EDIT</a>
                         <a href="hapus-parkir.php?id=<?php echo $row['id'] ?>" class="btn btn-sm btn-danger">HAPUS</a>
                       </td>
                   </tr>

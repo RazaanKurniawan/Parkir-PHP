@@ -28,11 +28,11 @@
         <div class="col-md-8 offset-md-2">
           <div class="card">
             <div class="card-header">
-              EDIT SISWA
+              EDIT PARKIR
             </div>
             <div class="card-body">
-              <form action="update-parkir.php" method="POST">
-                
+              <form action="edit-parkirkonek.php" method="POST">
+              <input type="hidden" name="id" value="<?php echo $row['plat_nomor'] ?>">
                 <div class="form-group">
                   <label>Plat Nomor</label>
                   <input type="text" name="plat_nomor" value="<?php echo $row['plat_nomor'] ?>" placeholder="Masukkan Plat Nomor" class="form-control">
@@ -41,22 +41,15 @@
 
                 <div class="form-group">
                   <label>Jenis Kendaraan</label>
-                  <input type="text" name="jenis_kendaraan" value="<?php echo $row['jenis_kendaraan'] ?>" placeholder="Masukkan Jenis Kendaraan" class="form-control">
+                  <select name="jenis_kendaraan" class="form-control">
+                        <option value="Motor">Motor</option>
+                        <option value="Mobil">Mobil</option>
+                  </select>
                 </div>
 
                 <div class="form-group">
                   <label>Nama Kendaraan</label>
                   <input type="text" name="nama_kendaraan" value="<?php echo $row['nama_kendaraan'] ?>" placeholder="Masukkan Nama Kendaraan" class="form-control">
-                </div>
-
-                <div class="form-group">
-                  <label>Jam Masuk</label>
-                  <input type="text" name="jam_masuk" value="<?php echo $row['jam_masuk'] ?>" placeholder="Masukkan Waktu Jam Masuk" class="form-control">
-                </div>
-
-                <div class="form-group">
-                  <label>Jam Keluar</label>
-                  <input type="text" name="jam_keluar" value="<?php echo $row['jam_keluar'] ?>" placeholder="Masukkan Waktu Jam Keluar" class="form-control">
                 </div>
                 
                 <button type="submit" class="btn btn-success">UPDATE</button>

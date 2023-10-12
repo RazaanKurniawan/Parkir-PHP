@@ -14,7 +14,7 @@
         <div class="col-md-8 offset-md-2">
           <div class="card">
             <div class="card-header">
-              TAMBAH SISWA
+              TAMBAH PARKIR
             </div>
             <div class="card-body">
               <form action="simpan-parkir.php" method="POST">
@@ -26,21 +26,15 @@
 
                 <div class="form-group">
                   <label>Jenis Kendaraan</label>
-                  <input type="text" name="jenis_kendaraan" placeholder="Masukkan Jenis Kendaraan" class="form-control">
+                  <select name="jenis_kendaraan" placeholder="Masukkan Jenis Kendaraan" class="form-control">
+                        <option value="Motor">Motor</option>
+                        <option value="Mobil">Mobil</option>
+                  </select>
                 </div>
 
                 <div class="form-group">
                   <label>Nama Kendaraan</label>
-                  <input type="text" name="nama_kendaraan" placeholder="Masukkan Nama Kendaraan" class="form-control">
-                </div>
-
-                <div class="form-group">
-                  <label>Jam Masuk</label>
-                  <input type="text" class="form-control" name="jam_masuk" placeholder="Masukkan Waktu Jam Masuk">
-                </div>
-                <div class="form-group">
-                  <label>Jam Keluar</label>
-                  <input type="text" class="form-control" name="jam_keluar" placeholder="Masukkan Waktu Jam Keluar">
+                  <input type="text" name="nama_kendaraan" id="nama_kendaraan" placeholder="Masukkan Nama Kendaraan" class="form-control">
                 </div>
                 
                 <button type="submit" class="btn btn-success">SIMPAN</button>

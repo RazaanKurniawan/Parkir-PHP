@@ -7,11 +7,9 @@ include('koneksi.php');
 $plat_nomor = $_POST['plat_nomor'];
 $jenis_kendaraan = $_POST['jenis_kendaraan'];
 $nama_kendaraan = $_POST['nama_kendaraan'];
-$jam_masuk = $_POST['jam_masuk'];
-$jam_keluar = $_POST['jam_keluar'];
 
 //query insert data ke dalam database
-$query = "INSERT INTO kendaraan (plat_nomor, jenis_kendaraan, nama_kendaraan, jam_keluar, jam_masuk) VALUES ('$plat_nomor', '$jenis_kendaraan', '$nama_kendaraan', '$jam_masuk', '$jam_keluar')";
+$query = "INSERT INTO kendaraan (plat_nomor, jenis_kendaraan, nama_kendaraan, jam_masuk) VALUES ('$plat_nomor', '$jenis_kendaraan', '$nama_kendaraan', NOW())";
 
 //kondisi pengecekan apakah data berhasil dimasukkan atau tidak
 if($connection->query($query)) {
