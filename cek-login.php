@@ -2,7 +2,7 @@
 
 session_start();
 
-include('koneksilog.php');
+include('koneksi.php');
 
 $username     = $_POST['username'];
 $password      = MD5($_POST['password']);

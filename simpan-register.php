@@ -1,6 +1,6 @@
 <?php
 
-include('koneksilog.php');
+include('koneksi.php');
 
 $nama_lengkap = $_POST['nama_lengkap'];
 $username     = $_POST['username'];
