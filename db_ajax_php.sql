@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 11, 2023 at 05:51 PM
+-- Generation Time: Oct 15, 2023 at 08:26 AM
 -- Server version: 10.4.28-MariaDB
 -- PHP Version: 8.2.4
 
@@ -18,22 +18,20 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `db_parkiran`
+-- Database: `db_ajax_php`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `kendaraan`
+-- Table structure for table `tbl_users`
 --
 
-CREATE TABLE `kendaraan` (
-  `id` int(11) NOT NULL,
-  `plat_nomor` varchar(11) NOT NULL,
-  `jenis_kendaraan` varchar(50) NOT NULL,
-  `nama_kendaraan` varchar(30) NOT NULL,
-  `jam_masuk` time(6) NOT NULL,
-  `jam_keluar` time(6) NOT NULL
+CREATE TABLE `tbl_users` (
+  `id_user` int(11) NOT NULL,
+  `nama_lengkap` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `username` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL,
+  `password` varchar(100) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -41,20 +39,20 @@ CREATE TABLE `kendaraan` (
 --
 
 --
--- Indexes for table `kendaraan`
+-- Indexes for table `tbl_users`
 --
-ALTER TABLE `kendaraan`
-  ADD PRIMARY KEY (`id`);
+ALTER TABLE `tbl_users`
+  ADD PRIMARY KEY (`id_user`);
 
 --
 -- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT for table `kendaraan`
+-- AUTO_INCREMENT for table `tbl_users`
 --
-ALTER TABLE `kendaraan`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+ALTER TABLE `tbl_users`
+  MODIFY `id_user` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
