@@ -21,8 +21,8 @@
                     <li class="nav-item">
                         <a class="nav-link" href="index.php">Parkiran</a>
                     </li>
-                    <li>
-                        <a class="btn btn-link text-danger" href="logout.php">Logout</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Logout</a>
                     </li>
                 </ul>
             </div>
