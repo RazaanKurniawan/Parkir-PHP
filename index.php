@@ -1,4 +1,10 @@
 <?php 
+
+session_start();
+
+if(!$_SESSION['id_user']){
+  header("location: login.php");
+}
 $page_title = "Parkiran Form";
 include('includes/header.php');
 include('includes/navbarlog.php');

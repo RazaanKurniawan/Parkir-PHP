@@ -1,4 +1,9 @@
 <?php 
+session_start();
+
+if(!$_SESSION['id_user']){
+  header("location: login.php");
+}
 $page_title = "Home Page";
 include('includes/header.php');
 include('includes/navbarlog.php');
