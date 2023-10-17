@@ -6,6 +6,7 @@ if(!$_SESSION['id_user']){
   header("location: login.php");
 }
 $page_title = "Parkiran Form";
+$parkiran = "nav-item active";
 include('includes/header.php');
 include('includes/navbarlog.php');
 ?>

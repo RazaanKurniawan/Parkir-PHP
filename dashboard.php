@@ -10,6 +10,7 @@
 
 <?php 
 $page_title = "Dashboard";
+$dashboard = "nav-item active";
 include('includes/header.php');
 include('includes/navbarlog.php');
 ?>

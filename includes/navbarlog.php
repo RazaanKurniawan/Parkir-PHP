@@ -12,13 +12,13 @@
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="home.php">Home</a>
+                    <li class="<?php if(isset($home)){echo "$home";} ?>">
+                        <a class="nav-link" href="home.php">Home</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="<?php if(isset($dashboard)){echo "$dashboard";} ?>">
                         <a class="nav-link" href="dashboard.php">Dashboard</a>
                     </li>
-                    <li class="nav-item">
+                    <li class="<?php if(isset($parkiran)){echo "$parkiran";} ?>">
                         <a class="nav-link" href="index.php">Parkiran</a>
                     </li>
                     <li class="nav-item">
