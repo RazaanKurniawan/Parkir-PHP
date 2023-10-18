@@ -14,6 +14,7 @@
 
 <?php 
 $page_title = "Edit Parkir";
+$parkiran = "nav-item active";
 include('includes/header.php');
 include('includes/navbarlog.php');
 ?>
@@ -37,8 +38,9 @@ include('includes/navbarlog.php');
                 <div class="form-group">
                   <label>Jenis Kendaraan</label>
                   <select name="jenis_kendaraan" class="form-control">
-                        <option value="Motor">Motor</option>
-                        <option value="Mobil">Mobil</option>
+                    <option style="display: none;"><?php echo $row['jenis_kendaraan'] ?></option>
+                    <option value="Motor">Motor</option>
+                    <option value="Mobil">Mobil</option>
                   </select>
                 </div>
 
