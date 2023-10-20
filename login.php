@@ -3,7 +3,6 @@ $page_title = "Login Form";
 include('includes/header.php');
 include('includes/navbar.php');
 ?>
-
 <div class="py-5">
     <div class="container">
         <div class="row justify-content-center">
@@ -20,6 +19,7 @@ include('includes/navbar.php');
                             <div class="form-group mb-3">
                                 <label for="">Password</label>
                                 <input type="password" id="password" class="form-control">
+                                <input type="checkbox" onclick="myFunction()"> Show Password
                             </div>
                             <div class="form-group">
                                 <button type="submit" class="btn btn-login btn-primary">Login</button>
@@ -34,6 +34,17 @@ include('includes/navbar.php');
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/limonte-sweetalert2/8.11.8/sweetalert2.all.min.js"></script>
+
+    <script>
+      function myFunction() {
+      var x = document.getElementById("password");
+      if (x.type === "password") {
+         x.type = "text";
+      } else {
+         x.type = "password";
+      }
+    }
+    </script>    
 
     <script>
       $(document).ready(function() {

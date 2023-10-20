@@ -12,7 +12,7 @@ include('includes/navbarlog.php');
               TAMBAH PARKIR
             </div>
             <div class="card-body">
-              <form action="simpan-parkir.php" method="POST">
+              <form action="simpan-parkir.php" method="POST" enctype="multipart/form-data">
                 
                 <div class="form-group">
                   <label>Plat Nomor</label>
@@ -31,6 +31,10 @@ include('includes/navbarlog.php');
                   <label>Nama Kendaraan</label>
                   <input type="text" name="nama_kendaraan" id="nama_kendaraan" placeholder="Masukkan Nama Kendaraan" class="form-control">
                 </div>
+                <div class="form-group">
+                  <label>Upload foto :</label>
+                  <input type="file" name="foto" class="form-control" required="required">
+                </div>
                 
                 <button type="submit" class="btn btn-success">SIMPAN</button>
                 <button type="reset" class="btn btn-warning">RESET</button>

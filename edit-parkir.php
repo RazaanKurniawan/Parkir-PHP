@@ -48,6 +48,10 @@ include('includes/navbarlog.php');
                   <label>Nama Kendaraan</label>
                   <input type="text" name="nama_kendaraan" value="<?php echo $row['nama_kendaraan'] ?>" placeholder="Masukkan Nama Kendaraan" class="form-control">
                 </div>
+                <div class="form-group">
+                  <label>Upload foto :</label>
+                  <input type="file" name="foto" class="form-control">
+                </div>
                 
                 <button type="submit" class="btn btn-success">UPDATE</button>
                 <button type="reset" class="btn btn-warning">RESET</button>
