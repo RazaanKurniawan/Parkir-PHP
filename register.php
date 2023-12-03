@@ -1,4 +1,5 @@
 <?php 
+$page_title = "Register Form";
 include('includes/navbar.php'); 
 include('includes/header.php');
 ?>
